@@ -2,7 +2,7 @@
 Proyecto machine learning
 
 Los datos utilizados seran 200 imagenes por clase
-Google drive con dataset American Sign Language:
+Google drive con dataset American Sign Language y tecnicas de escalamiento aplicadas :
 https://drive.google.com/drive/folders/12T7WFUGrXnJnKvZKeLaGCPVRHsZfRWJj?usp=sharing
 
 Obtenido de:
