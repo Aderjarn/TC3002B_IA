@@ -1,5 +1,5 @@
 # TC3002B_IA
-## Proyecto machine learning
+Proyecto del Módulo 2, en este se realizará un modelo el cual se entrenará con imágenes del lenguaje de señas americano para que, el modelo pueda identificar que letra o gesto es.
 
 ### Preprocesamiento de datos
 Los datos utilizados para este proyecto son el dataset de American  Sign Language, encontrado en kaggle. Dicho dataset se encuentra en la siguiente liga: https://www.kaggle.com/datasets/kapillondhe/american-sign-language?select=ASL_Dataset, con licencia GPL 2.
