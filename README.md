@@ -8,3 +8,9 @@ Este dataset esta dividido en Train y en Test, la sección de Train cuenta con a
 
 Para el funcionamiento adecuado del modelo a implementar, se seleccionaron **1000 imagenes por clase** para training y **250 por clase** para testing. Esto significa que la distribución del Dataset es de **80% a 20%**
 El dataset ya modificado para su uso en este proyecto se encuentra en el siguiente [Google Drive](https://drive.google.com/drive/folders/12T7WFUGrXnJnKvZKeLaGCPVRHsZfRWJj?usp=sharing), en el mismo se pueden encontrar tecnicas de escalamiento aplicadas.
+
+El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2227-7390/12/6/823#B21-mathematics-12-00823). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular 
+Seleccionar un modelo respaldado por un paper del estado del arte.
+Implementar el modelo usando un framework seleccionado.
+Seleccionar métricas adecuadas respaldadas por un paper del estado del arte.
+Reportar resultados obtenidos e interpretarlos
