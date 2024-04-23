@@ -10,9 +10,10 @@ Para el funcionamiento adecuado del modelo a implementar, se seleccionaron **100
 El dataset ya modificado para su uso en este proyecto se encuentra en el siguiente [Google Drive](https://drive.google.com/drive/folders/12T7WFUGrXnJnKvZKeLaGCPVRHsZfRWJj?usp=sharing), en el mismo se pueden encontrar tecnicas de escalamiento aplicadas.
 
 ### Implementación de modelo
-El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2227-7390/12/6/823#B21-mathematics-12-00823). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular 
-Seleccionar un modelo respaldado por un paper del estado del arte.
-Implementar el modelo usando un framework seleccionado.
+El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2227-7390/12/6/823#B21-mathematics-12-00823). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular se tomo como inspiración el preprocesamiento que se encuentra en el articulo y de manera más especifica para el modelo se utilizan tecnicas como dropout layer, en la red neuronal. Además se implemento una función early stopping al entrenamiento del modelo para asegurar que en caso de que este se empezara a desviar o no estuviera aprendiendo despues de cierto numero de epocas, el modelo se iba a parar, esto para así llegar a condiciones optimas del modelo y evitar overfitting principalmente.
+
+Una vez entrenado el modelo se utilizaron métricas como accuracy, loss, una matriz de confusión.
+
 Seleccionar métricas adecuadas respaldadas por un paper del estado del arte.
 Reportar resultados obtenidos e interpretarlos
 
