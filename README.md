@@ -7,8 +7,14 @@ Para el funcionamiento adecuado del modelo a implementar, se seleccionaron **100
 
 ## Preprocesamiento de dataset
 Antes de empezar a implementar y entrenar un modelo al dataset se le aplicaron varias aumentaciones, para así facilitar el trabajo raelizado en la implementación del modelo en si. Dicho preprocesamiento tomo como base el propuesto en el siguiente articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2710280). El preprocesado o aumentos aplicados a las imagenes a utilizar para Train son los siguientes: 
-- rescale=1./255
-- rotation_range=30
+- rescale=1./255                                         - target_size = (64, 64)
+    class_mode='sparse',
+    subset='training',
+    classes=class_names,
+    shuffle=True,
+    seed=42
+    )
+- rotation_range=30                                     - batch_size = 64,
 - width_shift_range=0.1
 - height_shift_range=0.1
 - shear_range=0.1
