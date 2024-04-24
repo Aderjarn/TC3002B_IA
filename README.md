@@ -29,10 +29,14 @@ Cómo se puede observar en el ultimo punto, se hizo una división de 80% - 20% e
 En esto observamos que se aplico un cambio en el tamaño de las imagenes, el loss del modelo que en esta caso sera utilizando sparce_categorical_crossentropy, un shuffle para prevenir que el modelo aprenda con algun tipo de bias y finalmente un seed para asegurar que el modelo reproduzca resultados de similares de una manera constante. 
 
 ## Implementación de modelo
-El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2710280). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular se tomaron tecnicas como dropout layer, en la red neuronal. Además se implemento una función early stopping al entrenamiento del modelo para asegurar que en caso de que este se empezara a desviar o no estuviera aprendiendo despues de cierto numero de epocas, el modelo se iba a parar, esto para así llegar a condiciones optimas del modelo y evitar overfitting principalmente.
+El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2710280). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular se tomaron tecnicas como cnn, max pooling, dropout layer, en la red neuronal. Además se implemento una función early stopping al entrenamiento del modelo para asegurar que en caso de que este se empezara a desviar o no estuviera aprendiendo despues de cierto numero de epocas, el modelo se iba a parar, esto para así llegar a condiciones optimas del modelo y evitar overfitting principalmente.
 
-Una vez entrenado el modelo se utilizaron métricas como accuracy, loss, matriz de confusión. dichas se pueden ver a continuación: 
+Una vez entrenado el modelo se utilizaron métricas como accuracy y loss, para evaluar su desempeño Train y Validation y así conocer si el modelo se encontraba en un estado de Underfitting u Overfitting. Dichas metricas se pueden ver graficadas a continuación: 
 ![Training and Validation Accuracy](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/8669ef1d-a976-4479-8e46-8127e939669f)
+
+Posteriormente se guardo el modelo, para utilizarlo en un archivo separado con los datos dentro de Test. En dicha fase se obtuvo la siguiente matriz de confusión con las predicciones que se hicieron basandose en el modelo y una tabla con una predicción por clase. En esta parte el modelo obtuvo un accuracy del 97%.
+![Confusion Matrix](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/d9aaa75e-0a9d-485f-b060-dba9b470f82f)
+![Predictions per class](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/ee9e5e10-8bc6-4514-be30-f75404279ca0)
 
 
 ## Bibliografía 
