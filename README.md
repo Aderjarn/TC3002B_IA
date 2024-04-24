@@ -35,7 +35,7 @@ Una vez entrenado el modelo se utilizaron métricas como accuracy y loss, para e
 ![Accuracy and Validation Acurracy and Loss](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/f1e2c88d-a32a-46c5-9878-c87f085e7df6)
 
 
-Posteriormente se guardo el modelo, para utilizarlo en un archivo separado con los datos dentro de Test. En dicha fase se obtuvo la siguiente matriz de confusión con las predicciones que se hicieron basandose en el modelo y una tabla con una predicción por clase. En esta parte el modelo obtuvo un accuracy del 97%.
+Posteriormente se guardo el modelo, para utilizarlo en un archivo separado con los datos dentro de Test. En dicha fase se obtuvo la siguiente matriz de confusión con las predicciones que se hicieron basandose en el modelo y una tabla con una predicción por clase. En esta parte el modelo obtuvo un accuracy del 96%.
 ![Confusion Matrix](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/9ece29d1-995a-45ce-b7fb-ebcd6289b2e9)
 
 ![Predictions per class](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/b18d5c2a-7921-4273-b806-df889dda5ab4)
