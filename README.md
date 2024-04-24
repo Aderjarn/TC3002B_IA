@@ -31,7 +31,7 @@ En esto observamos que se aplico un cambio en el tamaño de las imagenes, el los
 ## Implementación de modelo
 El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2710280). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular se tomaron tecnicas como dropout layer, en la red neuronal. Además se implemento una función early stopping al entrenamiento del modelo para asegurar que en caso de que este se empezara a desviar o no estuviera aprendiendo despues de cierto numero de epocas, el modelo se iba a parar, esto para así llegar a condiciones optimas del modelo y evitar overfitting principalmente.
 
-Una vez entrenado el modelo se utilizaron métricas como accuracy, loss, matriz de confusión. dichas se pueden ver 
+Una vez entrenado el modelo se utilizaron métricas como accuracy, loss, matriz de confusión. dichas se pueden ver a continuación: 
 ![Training and Validation Accuracy](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/8669ef1d-a976-4479-8e46-8127e939669f)
 
 
