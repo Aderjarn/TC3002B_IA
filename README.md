@@ -44,7 +44,7 @@ Y finalmente hice comprobaciones con imágenes de internet o con fotos tomadas e
 
 ![BaseRealScenerio](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/fe62178a-4ff8-4d20-a579-a5c828e7a512)
 
-##Mejoras de modelo
+## Mejoras de modelo
 El trabajo realizado en este apartado se encuentra en la carpeta ImprovedASLModel. Tomando en cuenta los resultados obtenidos en el apartado anterior, considere que eliminar o reducir el dropout del modelo cnn podría aportar mejores resultados. Debido a este pensamiento decidí dejar únicamente un dropout layer de 0.2 antes de las últimas neuronas. En Train esto elevó el Accuracy del modelo a un 98% y disminuyó el loss a 0.05%. A continuación se muestran las gráficas de Training and Validation Accuracy y Training and Validation Loss.
 
 ![Training and Validation Accuracy y Training and Validation Loss.
