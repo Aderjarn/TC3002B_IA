@@ -27,13 +27,12 @@ shuffle=True
 seed=42
 En esto observamos que se aplicó un cambio en el tamaño de las imágenes, el loss del modelo que en esta caso será utilizando sparce_categorical_crossentropy, un shuffle para prevenir que el modelo aprenda con algún tipo de bias y finalmente un seed para asegurar que el modelo reproduzca resultados de similares de una manera constante.
 
-
 ## Implementación de modelo
-El modelo a implementar se baso en el articulo: ["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2710280). En este articulo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular se tomaron tecnicas como cnn, max pooling, dropout layer, en la red neuronal. Además se implemento una función early stopping al entrenamiento del modelo para asegurar que en caso de que este se empezara a desviar o no estuviera aprendiendo despues de cierto numero de epocas, el modelo se iba a parar, esto para así llegar a condiciones optimas del modelo y evitar overfitting principalmente.
+El trabajo realizado en este apartado se encuentra en la carpeta BaseASLModel. El modelo a implementar se basó en el artículo:["Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning"](https://www.mdpi.com/2710280). En este artículo se detallan diferentes maneras de realizar modelos o algoritmos de aprendizaje para identificar las letras del lenguaje de señas arabe. Para este caso en particular se tomaron técnicas como cnn, max pooling, dropout layer, en la red neuronal. Además se implementó una función early stopping al entrenamiento del modelo para asegurar que en caso de que este se empezará a desviar o no estuviera aprendiendo después de cierto número de épocas, el modelo se iba a parar, esto para así llegar a condiciones óptimas del modelo y evitar overfitting principalmente.
 
-Una vez entrenado el modelo se utilizaron métricas como accuracy y loss, para evaluar su desempeño Train y Validation y así conocer si el modelo se encontraba en un estado de Underfitting u Overfitting. Dichas metricas se pueden ver graficadas a continuación: 
+Una vez entrenado el modelo se utilizaron métricas como accuracy y loss, para evaluar su desempeño Train y Validation y así conocer si el modelo se encontraba en un estado de Underfitting u Overfitting. Dichas métricas se pueden ver graficadas a continuación:
+ 
 ![Accuracy and Validation Acurracy and Loss](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/f1e2c88d-a32a-46c5-9878-c87f085e7df6)
-
 
 Posteriormente se guardo el modelo, para utilizarlo en un archivo separado con los datos dentro de Test. En dicha fase se obtuvo la siguiente matriz de confusión con las predicciones que se hicieron basandose en el modelo y una tabla con una predicción por clase. En esta parte el modelo obtuvo un accuracy del 96%.
 ![Confusion Matrix](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/9ece29d1-995a-45ce-b7fb-ebcd6289b2e9)
