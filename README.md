@@ -44,6 +44,23 @@ Y finalmente hice comprobaciones con imágenes de internet o con fotos tomadas e
 
 ![BaseRealScenerio](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/fe62178a-4ff8-4d20-a579-a5c828e7a512)
 
+##Mejoras de modelo
+El trabajo realizado en este apartado se encuentra en la carpeta ImprovedASLModel. Tomando en cuenta los resultados obtenidos en el apartado anterior, considere que eliminar o reducir el dropout del modelo cnn podría aportar mejores resultados. Debido a este pensamiento decidí dejar únicamente un dropout layer de 0.2 antes de las últimas neuronas. En Train esto elevó el Accuracy del modelo a un 98% y disminuyó el loss a 0.05%. A continuación se muestran las gráficas de Training and Validation Accuracy y Training and Validation Loss.
+
+![Training and Validation Accuracy y Training and Validation Loss.
+](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/5cbeb5be-20dc-4e8e-b9f0-85aab6714e51)
+
+Con el modelo guardado, se realizaron las pruebas con los archivos en Test, donde se obtuvieron los siguientes resultados. Accuracy del  96.81%. A continuación se encuentra la matriz de confusión y predicciones por clase generados con Test.
+
+![Improved Confusion Matrix](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/10b6b28d-d25b-4996-b094-a6c800f49436)
+
+![Improved Predictions per class](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/83b7aa8a-ac46-455b-aafc-9ee36b0fde29)
+
+Aunque en dichas gráficas observamos que el modelo tiene ligeros picos en Validation contra los obtenidos en la sección anterior, corriendo el modelo con casos reales o imágenes de internet, el nuevo modelo es capaz de identificar correctamente más casos.
+
+![ImprovedRealScenerio](https://github.com/Aderjarn/TC3002B_IA/assets/55771964/7be4f80d-c8f8-4285-87a0-ba78815bb121)
+
+
 ## Bibliografía 
 Kaggle American  Sign Language: https://www.kaggle.com/datasets/kapillondhe/american-sign-language?select=ASL_Dataset
 Enhancing Arabic Sign Language Interpretation: Leveraging Convolutional Neural Networks and Transfer Learning: https://www.mdpi.com/2710280
